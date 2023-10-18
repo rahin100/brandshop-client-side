@@ -8,7 +8,7 @@ const AllBrandData = () => {
   return (
     <div className="grid grid-cols-3 gap-7 mb-[100px]">
       {allData?.map((singleData) => (
-        <AllBrand key={singleData._id} singleData={singleData}></AllBrand>
+        <AllBrand key={singleData.id} singleData={singleData}></AllBrand>
       ))}
     </div>
   );

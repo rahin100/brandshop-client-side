@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 
 /* eslint-disable react/prop-types */
 const AllBrand = ({ singleData }) => {
-  const {_id, brandName, brandImage } = singleData;
+  const {id, brandName, brandImage } = singleData;
 
   return (
-    <Link to={`/brandDetails/:${_id}`}>
+    <Link to={`/brandDetails/${id}`}>
       <div>
         <div className="card w-[500px] bg-base-100 shadow-xl">
           <figure>
