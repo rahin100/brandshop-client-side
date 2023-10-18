@@ -1,45 +1,84 @@
 const Banner = () => {
   return (
     <div>
-      <div className="carousel w-full">
-        <div id="item1" className="carousel-item w-full">
+      <div className="carousel w-full h-[90vh]">
+        <div id="slide1" className="carousel-item relative w-full">
           <img
-            src="/images/stock/photo-1625726411847-8cbb60cc71e6.jpg"
+            src="https://i.ibb.co/Lr5Kxck/joyful-girl-with-curly-brown-hair-dancing-purple-background-with-kissing-face-expression.jpg"
             className="w-full"
           />
+          <div className="absolute left-[190px] top-[30%]">
+            <h1 className="text-white text-8xl mb-3  font-semibold">FASHION</h1>
+            <h2 className="text-white text-8xl mb-3 font-semibold">CHANGES</h2>
+            <h3 className="text-white text-8xl mb-5 font-semibold">ALWAYS...</h3>
+            
+          </div>
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" className="btn btn-circle">
+              ❮
+            </a>
+            <a href="#slide2" className="btn btn-circle">
+              ❯
+            </a>
+          </div>
         </div>
-        <div id="item2" className="carousel-item w-full">
+        <div id="slide2" className="carousel-item relative w-full">
           <img
-            src="/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
+            src="https://i.ibb.co/3cwFCT5/cheerful-caucasian-woman-showing-directions-two-ways-pointing-sideways-variants-choices-custo.jpg"
             className="w-full"
           />
+          <div className="absolute left-[190px] top-[30%]">
+            <h1 className="text-white text-8xl mb-3  font-semibold">FASHION</h1>
+            <h2 className="text-white text-8xl mb-3 font-semibold">CHANGES</h2>
+            <h3 className="text-white text-8xl mb-3 font-semibold">ALWAYS...</h3>
+          </div>
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" className="btn btn-circle">
+              ❮
+            </a>
+            <a href="#slide3" className="btn btn-circle">
+              ❯
+            </a>
+          </div>
         </div>
-        <div id="item3" className="carousel-item w-full">
+        <div id="slide3" className="carousel-item relative w-full">
           <img
-            src="/images/stock/photo-1414694762283-acccc27bca85.jpg"
+            src="https://i.ibb.co/Rv4rwKY/pretty-woman-coat-looking-camera.jpg"
             className="w-full"
           />
+          <div className="absolute left-[190px] top-[30%]">
+            <h1 className="text-white text-8xl mb-3  font-semibold">FASHION</h1>
+            <h2 className="text-white text-8xl mb-3 font-semibold">CHANGES</h2>
+            <h3 className="text-white text-8xl mb-3 font-semibold">ALWAYS...</h3>
+          </div>
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" className="btn btn-circle">
+              ❮
+            </a>
+            <a href="#slide4" className="btn btn-circle">
+              ❯
+            </a>
+          </div>
         </div>
-        <div id="item4" className="carousel-item w-full">
+        <div id="slide4" className="carousel-item relative w-full">
           <img
-            src="/images/stock/photo-1665553365602-b2fb8e5d1707.jpg"
+            src="https://i.ibb.co/68L9HrJ/two-young-beautiful-blond-smiling-hipster-women-trendy-summer-clothes-sexy-carefree-women-posing-nea.jpg"
             className="w-full"
           />
+          <div className="absolute left-[190px] top-[30%]">
+            <h1 className="text-white text-8xl mb-3  font-semibold">FASHION</h1>
+            <h2 className="text-white text-8xl mb-3 font-semibold">CHANGES</h2>
+            <h3 className="text-white text-8xl mb-3 font-semibold">ALWAYS...</h3>
+          </div>
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" className="btn btn-circle">
+              ❮
+            </a>
+            <a href="#slide1" className="btn btn-circle">
+              ❯
+            </a>
+          </div>
         </div>
-      </div>
-      <div className="flex justify-center w-full py-2 gap-2">
-        <a href="#item1" className="btn btn-xs">
-          1
-        </a>
-        <a href="#item2" className="btn btn-xs">
-          2
-        </a>
-        <a href="#item3" className="btn btn-xs">
-          3
-        </a>
-        <a href="#item4" className="btn btn-xs">
-          4
-        </a>
       </div>
     </div>
   );
