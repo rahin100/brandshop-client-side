@@ -8,6 +8,7 @@ const SignUp = () => {
 
   const handleSignUp = (e) => {
     e.preventDefault();
+    e.target.reset()
     const form = e.target;
     const name = form.name.value;
     const photo = form.photo.value;
@@ -26,7 +27,6 @@ const SignUp = () => {
         createUser(email, password)
           .then((result) => {
             console.log(result.user);
-            e.currentTarget.reset();
           })
           .catch((error) => {
             console.log(error);

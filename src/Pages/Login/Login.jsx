@@ -1,12 +1,14 @@
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { useContext } from "react";
 
 const Login = () => {
   const { signIn, googleLogin } = useContext(AuthContext);
 
+
   const handleLogin = (e) => {
     e.preventDefault();
+    e.target.reset()
     const form = e.target;
     const email = form.email.value;
     const password = form.password.value;

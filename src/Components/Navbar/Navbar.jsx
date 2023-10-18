@@ -1,10 +1,27 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
+import "./Navbar.css"
+import { FaToggleOn } from 'react-icons/fa';
+
 
 const Navbar = () => {
-
   const { user, logOut } = useContext(AuthContext);
+
+  const handleToggle = () => {
+    const body = document.body;
+    body.classList.toggle("dark-mode");
+    const isDarkMode = body.classList.contains("dark-mode");
+    localStorage.setItem("theme", isDarkMode ? "dark" : "light");
+  };
+
+  useEffect(() => {
+    const isDarkMode = localStorage.getItem("theme") === "dark";
+    if (isDarkMode) {
+      document.body.classList.add("dark-mode");
+    }
+  }, []);
+
  
 
   const handleSignOut = () => {
@@ -12,7 +29,6 @@ const Navbar = () => {
     .then()
     .catch();
   };
-
 
   const navLink = (
     <ul className="flex space-x-6">
@@ -83,8 +99,12 @@ const Navbar = () => {
               {navLink}
             </ul>
           </div>
-          <Link to={'/'}>
-          <img className="w-[230px]" src="https://svgshare.com/i/yd8.svg" alt="" />
+          <Link to={"/"}>
+            <img
+              className="w-[230px]"
+              src="https://svgshare.com/i/yd8.svg"
+              alt=""
+            />
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -132,6 +152,7 @@ const Navbar = () => {
               </div>
             </Link>
           )}
+          <FaToggleOn onClick={handleToggle} className="icons text-3xl"></FaToggleOn>
         </div>
       </div>
     </div>
