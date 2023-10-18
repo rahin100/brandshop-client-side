@@ -1,6 +1,6 @@
 const Banner = () => {
   return (
-    <div>
+    <div className="mb-[100px]">
       <div className="carousel w-full h-[90vh]">
         <div id="slide1" className="carousel-item relative w-full">
           <img
@@ -14,10 +14,10 @@ const Banner = () => {
             
           </div>
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide4" className="btn btn-circle">
+            <a href="#slide4" className="btn btn-circle bg-transparent text-white">
               ❮
             </a>
-            <a href="#slide2" className="btn btn-circle">
+            <a href="#slide2" className="btn btn-circle bg-transparent text-white">
               ❯
             </a>
           </div>
@@ -33,10 +33,10 @@ const Banner = () => {
             <h3 className="text-white text-8xl mb-3 font-semibold">ALWAYS...</h3>
           </div>
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide1" className="btn btn-circle">
+            <a href="#slide1" className="btn btn-circle bg-transparent text-white">
               ❮
             </a>
-            <a href="#slide3" className="btn btn-circle">
+            <a href="#slide3" className="btn btn-circle bg-transparent text-white">
               ❯
             </a>
           </div>
@@ -52,10 +52,10 @@ const Banner = () => {
             <h3 className="text-white text-8xl mb-3 font-semibold">ALWAYS...</h3>
           </div>
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide2" className="btn btn-circle">
+            <a href="#slide2" className="btn btn-circle bg-transparent text-white">
               ❮
             </a>
-            <a href="#slide4" className="btn btn-circle">
+            <a href="#slide4" className="btn btn-circle bg-transparent text-white">
               ❯
             </a>
           </div>
@@ -71,10 +71,10 @@ const Banner = () => {
             <h3 className="text-white text-8xl mb-3 font-semibold">ALWAYS...</h3>
           </div>
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide3" className="btn btn-circle">
+            <a href="#slide3" className="btn btn-circle bg-transparent text-white">
               ❮
             </a>
-            <a href="#slide1" className="btn btn-circle">
+            <a href="#slide1" className="btn btn-circle bg-transparent text-white">
               ❯
             </a>
           </div>

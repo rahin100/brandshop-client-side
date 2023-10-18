@@ -14,7 +14,7 @@ const Navbar = () => {
       </li>
       <li className="text-[18px]  font-medium text-black">
         <NavLink
-          to="/team"
+          to="/addProduct"
           className="text-black"
           activeclassname="text-primary-600"
         >

@@ -1,0 +1,51 @@
+[
+  {
+    
+    "brandName": "Nike",
+    "brandImage": "https://i.ibb.co/7VB9nqJ/paul-steuber-rs11hu-bk-Tc-unsplash.jpg",
+    "slider1": "https://i.ibb.co/gjZx2PH/domino-164-6w-VEHf-I-unsplash.jpg",
+    "slider2": "https://i.ibb.co/Qp3yZzn/taylor-smith-a-DZ5-YIued-Qg-unsplash.jpg",
+    "slider3": "https://i.ibb.co/Ytsk50c/paul-volkmer-upd-W-QUcc-FE-unsplash.jpg"
+
+  },
+  {
+   
+    "brandName": " Adidas",
+    "brandImage": "https://i.ibb.co/ccDt8ZS/chuttersnap-XNq-Llj-W6-XU8-unsplash.jpg",
+    "slider1": "https://i.ibb.co/TcR0W3X/grailify-EUo-Tj2y-I5-LU-unsplash.jpg",
+    "slider2": "https://i.ibb.co/Bzvz76Q/sara-kurfess-Vfvnjb-KFu4-unsplash.jpg",
+    "slider3": "https://i.ibb.co/Z2jKhyd/fachry-zella-devandra-b-NSd-Ik-CBJOs-unsplash.jpg"
+  },
+  {
+    
+    "brandName": "Gucci",
+    "brandImage": "https://i.ibb.co/nry9bT8/julien-tondu-0-Lw-EQ2dow-M8-unsplash.jpg",
+    "slider1": "https://i.ibb.co/StrLnPp/pexels-katelyn-whitson-12901661.jpg",
+    "slider2": "https://i.ibb.co/6Ywwd31/riley-edwards-6km-NVesl-MW8-unsplash.jpg",
+    "slider3": "https://i.ibb.co/jJDjc7w/james-ree-Zme-Ftu11-Hpc-unsplash.jpg"
+  },
+  {
+    
+    "brandName": "CHANEL",
+    "brandImage": "https://i.ibb.co/sRCyhd6/5f7c2ea294fce90018f7b412.jpg",
+    "slider1": "https://i.ibb.co/sCkD4Tn/tu-ikuan-w-o-Lz-Cj-Xp7-U-unsplash.jpg",
+    "slider2": "https://i.ibb.co/chBfjGH/pexels-antony-trivet-9981738.jpg",
+    "slider3": "https://i.ibb.co/gvmPQfh/Screen-Shot-2023-03-31-at-5-10-22-pm-1024x765.png"
+  },
+  {
+    
+    "brandName": "H&M",
+    "brandImage": "https://i.ibb.co/t88CW3c/sei-h-A-Znk-S2-Nwc-unsplash.jpg",
+    "slider1": "https://i.ibb.co/YWMc0bN/8d821db5dbec-puffer-jacket-edit-t-jpg.jpg",
+    "slider2": "https://i.ibb.co/FnTnQPg/pexels-horacio-rojas-2866082.jpg",
+    "slider3": "https://i.ibb.co/PWzcVN6/redicul-pict-IGrpk-ZBFi-HU-unsplash.jpg"
+  },
+  {
+    
+    "brandName": "Louis Vuitton",
+    "brandImage": "https://i.ibb.co/BPxNhsp/bloombergquint-2016-07-f68cdcf3-a84b-440f-9809-7e8c60ad3002-237958592.jpg",
+    "slider1": "https://i.ibb.co/4K7g95y/korie-cull-Om-IEij4-Mhn-A-unsplash.jpg",
+    "slider2": "https://i.ibb.co/PDwcN93/pexels-erik-mclean-4061385.jpg",
+    "slider3": "https://i.ibb.co/HYfnFmH/lv1.jpg"
+  }
+]
