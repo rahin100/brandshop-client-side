@@ -1,0 +1,9 @@
+
+  .background-image {
+    background-image: url('https://i.ibb.co/862bqTH/grailify-B02q-Qpqt-Wn-U-unsplash.jpg');
+    background-size: cover; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+    min-height: 500px; /* Set your desired height */
+    width: 100%;
+    position: relative;
+  }
