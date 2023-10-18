@@ -32,7 +32,7 @@ const Navbar = () => {
 
   const navLink = (
     <ul className="flex space-x-6">
-      <li className="text-[18px] font-medium text-black">
+      <li className="text-[18px] font-bold text-black">
         <NavLink
           to="/"
           className="text-black"
@@ -41,7 +41,7 @@ const Navbar = () => {
           Home
         </NavLink>
       </li>
-      <li className="text-[18px]  font-medium text-black">
+      <li className="text-[18px]  font-bold text-black">
         <NavLink
           to="/addProduct"
           className="text-black"
@@ -50,7 +50,7 @@ const Navbar = () => {
           Add Product
         </NavLink>
       </li>
-      <li className="text-[18px] font-medium  text-black">
+      <li className="text-[18px] font-bold  text-black">
         <NavLink
           to="/testimonials"
           className="text-black"
@@ -59,7 +59,7 @@ const Navbar = () => {
           My Cart
         </NavLink>
       </li>
-      <li className="text-[18px] font-medium text-black">
+      <li className="text-[18px] font-bold text-black">
         <NavLink
           to="/login"
           className="text-black"
@@ -73,7 +73,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="navbar shadow-2xl p-4">
+      <div className="navbar shadow-2xl p-4 bg-[#F9F6EE]">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
