@@ -8,6 +8,7 @@ import BrandDetails from "../Pages/BrandDetails/BrandDetails";
 import SignUp from "../Pages/SignUp/SignUp";
 import Login from "../Pages/Login/Login";
 import ProductDetails from "../Pages/Product Details/ProductDetails";
+import MyCart from "../Pages/My Cart/MyCart";
 
 const router = createBrowserRouter([
   {
@@ -56,6 +57,15 @@ const router = createBrowserRouter([
             return data;
           }
 
+        },
+        {
+          path:"/mycart",
+          element: <MyCart></MyCart>,
+          loader:async () =>{
+            const res = await fetch("http://localhost:5000/cart")
+            const data = await res.json()
+            return data;
+          }
         }
     ]
   }

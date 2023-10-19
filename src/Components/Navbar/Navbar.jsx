@@ -52,7 +52,7 @@ const Navbar = () => {
       </li>
       <li className="text-[18px] font-bold  text-black">
         <NavLink
-          to="/testimonials"
+          to="/mycart"
           className="text-black"
           activeclassname="text-primary-600"
         >
