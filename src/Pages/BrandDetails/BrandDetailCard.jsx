@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
 /* eslint-disable react/prop-types */
-const BrandDetailCard = ({ brand }) => {
-  const { slider1, slider2, slider3, products } = brand;
+const BrandDetailCard = ({ brand,products }) => {
+  const { slider1, slider2, slider3} = brand;
 
   return (
     <div>
@@ -10,16 +10,10 @@ const BrandDetailCard = ({ brand }) => {
         <div id="slide1" className="carousel-item relative w-full">
           <img src={slider1} className="w-full" />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a
-              href="#slide3"
-              className="btn btn-circle bg-transparent text-white"
-            >
+            <a href="#slide3" className="btn btn-circle bg-transparent text-white">
               ❮
             </a>
-            <a
-              href="#slide2"
-              className="btn btn-circle bg-transparent text-white"
-            >
+            <a href="#slide2" className="btn btn-circle bg-transparent text-white">
               ❯
             </a>
           </div>
@@ -28,16 +22,10 @@ const BrandDetailCard = ({ brand }) => {
           <img src={slider2} className="w-full" />
 
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a
-              href="#slide1"
-              className="btn btn-circle bg-transparent text-white"
-            >
+            <a href="#slide1" className="btn btn-circle bg-transparent text-white">
               ❮
             </a>
-            <a
-              href="#slide3"
-              className="btn btn-circle bg-transparent text-white"
-            >
+            <a href="#slide3" className="btn btn-circle bg-transparent text-white">
               ❯
             </a>
           </div>
@@ -46,26 +34,18 @@ const BrandDetailCard = ({ brand }) => {
           <img src={slider3} className="w-full" />
 
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a
-              href="#slide2"
-              className="btn btn-circle bg-transparent text-white"
-            >
+            <a href="#slide2" className="btn btn-circle bg-transparent text-white">
               ❮
             </a>
-            <a
-              href="#slide1"
-              className="btn btn-circle bg-transparent text-white"
-            >
+            <a href="#slide1" className="btn btn-circle bg-transparent text-white">
               ❯
             </a>
           </div>
         </div>
       </div>
 
-
-
-        {/* products  */}
-        <div className="grid grid-cols-3 gap-5 mt-[40px] mb-[40px]">
+      {/* products */}
+      <div className="grid grid-cols-3 gap-5 mt-[40px] mb-[40px]">
         {products?.map((product) => (
           <div
             key={product.id}
@@ -95,14 +75,13 @@ const BrandDetailCard = ({ brand }) => {
               </p>
             </div>
             <div className="p-6 pt-0">
-              <Link to={`/details/${product.id}`}> 
-              <button
-                className="btn btn-primary block w-full select-none rounded-lg bg-blue-gray-900/10 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-blue-gray-900 transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                type="button"
-              >
-                Details
-              </button>
-              
+              <Link to={`/details/${product._id}`}>
+                <button
+                  className="btn btn-primary block w-full select-none rounded-lg bg-blue-gray-900/10 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-blue-gray-900 transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  type="button"
+                >
+                  Details
+                </button>
               </Link>
               <button
                 className="btn btn-secondary block w-full select-none rounded-lg bg-blue-gray-900/10 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-blue-gray-900 transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
