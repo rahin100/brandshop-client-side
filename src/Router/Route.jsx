@@ -7,6 +7,7 @@ import BrandDetails from "../Pages/BrandDetails/BrandDetails";
 
 import SignUp from "../Pages/SignUp/SignUp";
 import Login from "../Pages/Login/Login";
+import ProductDetails from "../Pages/Product Details/ProductDetails";
 
 const router = createBrowserRouter([
   {
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
           path: "/signUp",
           element:<SignUp></SignUp>
         },
+        {
+          path:'/details/:id',
+          element:<ProductDetails></ProductDetails>
+        }
     ]
   }
 

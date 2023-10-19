@@ -1,20 +1,96 @@
 [
   {
-    "id":"1",
+    "id": "1",
     "brandName": "Nike",
     "brandImage": "https://i.ibb.co/7VB9nqJ/paul-steuber-rs11hu-bk-Tc-unsplash.jpg",
     "slider1": "https://i.ibb.co/gjZx2PH/domino-164-6w-VEHf-I-unsplash.jpg",
     "slider2": "https://i.ibb.co/Qp3yZzn/taylor-smith-a-DZ5-YIued-Qg-unsplash.jpg",
-    "slider3": "https://i.ibb.co/Ytsk50c/paul-volkmer-upd-W-QUcc-FE-unsplash.jpg"
-
+    "slider3": "https://i.ibb.co/Ytsk50c/paul-volkmer-upd-W-QUcc-FE-unsplash.jpg",
+    "products": [
+      {
+        "id": 11,
+        "image": "https://i.ibb.co/ZY7wH7C/christian-lucas-vra-H9m7hf-HU-unsplash.jpg",
+        "name": "Nike Air Max 90",
+        "brandName": "Nike",
+        "type": "Footwear",
+        "price": 129.99,
+        "rating": 4.7
+      },
+      {
+        "id": 12,
+        "image": "https://i.ibb.co/FsfXJrC/ryan-plomp-jvo-Z-Aux9aw-unsplash.jpg",
+        "name": "Nike React Infinity Run Flyknit",
+        "brandName": "Nike",
+        "type": "Footwear",
+        "price": 149.99,
+        "rating": 4.8
+      },
+      {
+        "id": 13,
+        "image": "https://i.ibb.co/kXt6DS4/ryan-plomp-76w-e-DO1u1-E-unsplash.jpg",
+        "name": "Nike Air Zoom Pegasus 38",
+        "brandName": "Nike",
+        "type": "Footwear",
+        "price": 119.99,
+        "rating": 4.6
+      },
+      {
+        "id": 14,
+        "image": "https://i.ibb.co/271x2Rm/jeff-tumale-SD9-Jyl1x-NQ4-unsplash.jpg",
+        "name": "Nike Air Force 1",
+        "brandName": "Nike",
+        "type": "Footwear",
+        "price": 109.99,
+        "rating": 4.5
+      }
+    ]
   },
+  
   {
     "id":"2",
     "brandName": " Adidas",
     "brandImage": "https://i.ibb.co/ccDt8ZS/chuttersnap-XNq-Llj-W6-XU8-unsplash.jpg",
     "slider1": "https://i.ibb.co/TcR0W3X/grailify-EUo-Tj2y-I5-LU-unsplash.jpg",
     "slider2": "https://i.ibb.co/Bzvz76Q/sara-kurfess-Vfvnjb-KFu4-unsplash.jpg",
-    "slider3": "https://i.ibb.co/Z2jKhyd/fachry-zella-devandra-b-NSd-Ik-CBJOs-unsplash.jpg"
+    "slider3": "https://i.ibb.co/Z2jKhyd/fachry-zella-devandra-b-NSd-Ik-CBJOs-unsplash.jpg",
+    "products": [
+      {
+        "id": 21,
+        "image": "https://i.ibb.co/2SzJCgT/zachary-keimig-Spbem-Gt-Ig2-M-unsplash.jpg",
+        "name": "Adidas Ultraboost",
+        "brandName": "Adidas",
+        "type": "Footwear",
+        "price": 139.99,
+        "rating": 4.9
+      },
+      {
+        "id": 22,
+        "image": "https://i.ibb.co/mXtD5Vx/matthew-hamilton-3-Cf-NHc-YVDYQ-unsplash.jpg",
+        "name": "Adidas Superstar",
+        "brandName": "Adidas",
+        "type": "Footwear",
+        "price": 109.99,
+        "rating": 4.7
+      },
+      {
+        "id": 23,
+        "image": "https://i.ibb.co/1dj191v/alex-AOL4-f-DQ3-M-unsplash.jpg",
+        "name": "Adidas NMD",
+        "brandName": "Adidas",
+        "type": "Footwear",
+        "price": 129.99,
+        "rating": 4.6
+      },
+      {
+        "id": 24,
+        "image": "https://i.ibb.co/zX6f2Bk/ole-witt-PKq-Ak-GHkz4-E-unsplash.jpg",
+        "name": "Adidas Originals",
+        "brandName": "Adidas",
+        "type": "Footwear",
+        "price": 119.99,
+        "rating": 4.8
+      }
+    ]
   },
   {
     "id":"3",
@@ -22,7 +98,45 @@
     "brandImage": "https://i.ibb.co/nry9bT8/julien-tondu-0-Lw-EQ2dow-M8-unsplash.jpg",
     "slider1": "https://i.ibb.co/StrLnPp/pexels-katelyn-whitson-12901661.jpg",
     "slider2": "https://i.ibb.co/6Ywwd31/riley-edwards-6km-NVesl-MW8-unsplash.jpg",
-    "slider3": "https://i.ibb.co/jJDjc7w/james-ree-Zme-Ftu11-Hpc-unsplash.jpg"
+    "slider3": "https://i.ibb.co/jJDjc7w/james-ree-Zme-Ftu11-Hpc-unsplash.jpg",
+    "products": [
+      {
+        "id": 31,
+        "image": "https://i.ibb.co/n69Rqck/pexels-evg-kowalievska-1187777.jpg",
+        "name": "Gucci Handbag",
+        "brandName": "Gucci",
+        "type": "Fashion",
+        "price": 599.99,
+        "rating": 4.8
+      },
+      {
+        "id": 32,
+        "image": "https://i.ibb.co/mcQPJrS/victor-furtuna-fw-Mckadwg-DQ-unsplash.jpg",
+        "name": "Gucci Sunglasses",
+        "brandName": "Gucci",
+        "type": "Fashion",
+        "price": 249.99,
+        "rating": 4.7
+      },
+      {
+        "id": 81,
+        "image": "https://i.ibb.co/SXHyG8d/beautiful-caucasian-woman-with-wavy-blonde-hair-new-stylish-dress-poses-fashion-magazine-luxurious-a.jpg",
+        "name": "Gucci Stylish Dress",
+        "brandName": "Gucci",
+        "type": "Apparel",
+        "price": 2199.99,
+        "rating": 4.9
+      },
+      {
+        "id": 34,
+        "image": "https://i.ibb.co/JHWDmcH/dennis-cortes-5m-XIR5ufuk-Q-unsplash.jpg",
+        "name": "Gucci Wallet",
+        "brandName": "Gucci",
+        "type": "Fashion",
+        "price": 299.99,
+        "rating": 4.9
+      }
+    ]
   },
   {
     "id":"4",
@@ -30,7 +144,45 @@
     "brandImage": "https://i.ibb.co/sRCyhd6/5f7c2ea294fce90018f7b412.jpg",
     "slider1": "https://i.ibb.co/sCkD4Tn/tu-ikuan-w-o-Lz-Cj-Xp7-U-unsplash.jpg",
     "slider2": "https://i.ibb.co/chBfjGH/pexels-antony-trivet-9981738.jpg",
-    "slider3": "https://i.ibb.co/gvmPQfh/Screen-Shot-2023-03-31-at-5-10-22-pm-1024x765.png"
+    "slider3": "https://i.ibb.co/gvmPQfh/Screen-Shot-2023-03-31-at-5-10-22-pm-1024x765.png",
+    "products": [
+      {
+        "id": 41,
+        "image": "https://i.ibb.co/LgTqq9h/mona-siswanto-Q61-Hg6oh-8-Q-unsplash.jpg",
+        "name": "Chanel Handbag",
+        "brandName": "Chanel",
+        "type": "Fashion",
+        "price": 799.99,
+        "rating": 4.7
+      },
+      {
+        "id": 42,
+        "image": "https://i.ibb.co/25LhM3t/young-sexy-blond-woman-model-evening-dress-posing-blue-sky-wall.jpg",
+        "name": "Chanel Elegant Dress",
+        "brandName": "Chanel",
+        "type": "Apparel",
+        "price": 1999.99,
+        "rating": 4.9
+      },
+      {
+        "id": 43,
+        "image": "https://i.ibb.co/k3JgXNh/pexels-harper-sunday-9482092.jpg",
+        "name": "Chanel Luxury Shoes",
+        "brandName": "Chanel",
+        "type": "Footwear",
+        "price": 1299.99,
+        "rating": 4.6
+      },
+      {
+        "id": 44,
+        "image": "https://i.ibb.co/stkRz9y/kaboompics-book-sunglasses-claw-clip-33004.jpg",
+        "name": "Chanel Sunglasses",
+        "brandName": "Chanel",
+        "type": "Fashion",
+        "price": 249.99,
+        "rating": 4.6
+      }
+    ]
   },
   {
     "id":"5",
@@ -38,7 +190,45 @@
     "brandImage": "https://i.ibb.co/t88CW3c/sei-h-A-Znk-S2-Nwc-unsplash.jpg",
     "slider1": "https://i.ibb.co/YWMc0bN/8d821db5dbec-puffer-jacket-edit-t-jpg.jpg",
     "slider2": "https://i.ibb.co/FnTnQPg/pexels-horacio-rojas-2866082.jpg",
-    "slider3": "https://i.ibb.co/PWzcVN6/redicul-pict-IGrpk-ZBFi-HU-unsplash.jpg"
+    "slider3": "https://i.ibb.co/PWzcVN6/redicul-pict-IGrpk-ZBFi-HU-unsplash.jpg",
+    "products": [
+      {
+        "id": 51,
+        "image": "https://i.ibb.co/Df9cBFY/pexels-monstera-production-6311475.jpg",
+        "name": "H&M Basic T-Shirt",
+        "brandName": "H&M",
+        "type": "Apparel",
+        "price": 19.99,
+        "rating": 4.5
+      },
+      {
+        "id": 52,
+        "image": "https://i.ibb.co/VWdgYzy/blonde-woman-posing-fashion-railing.jpg",
+        "name": "H&M Skinny Jeans",
+        "brandName": "H&M",
+        "type": "Apparel",
+        "price": 39.99,
+        "rating": 4.7
+      },
+      {
+        "id": 53,
+        "image": "https://i.ibb.co/3dgGq7D/portrait-young-beautiful-smiling-hipster-girl-trendy-summer-sundress-sexy-carefree-woman-posing-stre.jpg",
+        "name": "H&M Summer Dress",
+        "brandName": "H&M",
+        "type": "Apparel",
+        "price": 29.99,
+        "rating": 4.6
+      },
+      {
+        "id": 54,
+        "image": "https://i.ibb.co/Z88XBw9/pexels-saliha-sevim-7651067.jpg",
+        "name": "H&M Sneakers",
+        "brandName": "H&M",
+        "type": "Footwear",
+        "price": 49.99,
+        "rating": 4.8
+      }
+    ]
   },
   {
     "id":"6",
@@ -46,6 +236,44 @@
     "brandImage": "https://i.ibb.co/BPxNhsp/bloombergquint-2016-07-f68cdcf3-a84b-440f-9809-7e8c60ad3002-237958592.jpg",
     "slider1": "https://i.ibb.co/4K7g95y/korie-cull-Om-IEij4-Mhn-A-unsplash.jpg",
     "slider2": "https://i.ibb.co/PDwcN93/pexels-erik-mclean-4061385.jpg",
-    "slider3": "https://i.ibb.co/HYfnFmH/lv1.jpg"
+    "slider3": "https://i.ibb.co/HYfnFmH/lv1.jpg",
+    "products": [
+      {
+        "id": 61,
+        "image": "https://i.ibb.co/h7qrF8k/jonathan-j-castellon-5-ABk8-BTqd-LE-unsplash.jpg",
+        "name": "Louis Vuitton Classic Bag",
+        "brandName": "Louis Vuitton",
+        "type": "Apparel",
+        "price": 1199.99,
+        "rating": 4.9
+      },
+      {
+        "id": 62,
+        "image": "https://i.ibb.co/hMJF762/louis-vuitton-monogram-shine-shawl-s00-shawls-and-stoles-M75121-PM2-Front-view.jpg",
+        "name": "Louis Vuitton Silk Scarf",
+        "brandName": "Louis Vuitton",
+        "type": "Fashion",
+        "price": 399.99,
+        "rating": 4.8
+      },
+      {
+        "id": 63,
+        "image": "https://i.ibb.co/tw6P9VX/louis-vuitton-micro-wallet-monogram-canvas-wallets-and-small-leather-goods-M68704-PM2-Front-view.jpg",
+        "name": "Louis Vuitton Leather Wallet",
+        "brandName": "Louis Vuitton",
+        "type": "Fashion",
+        "price": 499.99,
+        "rating": 4.7
+      },
+      {
+        "id": 64,
+        "image": "https://i.ibb.co/dDs5qHv/louis-vuitton-long-pleated-evening-dress-ready-to-wear-FHDR95-HOH900-PM2-Front-view.jpg",
+        "name": "Louis Vuitton Evening Dress",
+        "brandName": "Louis Vuitton",
+        "type": "Apparel",
+        "price": 1999.99,
+        "rating": 4.6
+      }
+    ]
   }
 ]

@@ -26,7 +26,7 @@ const AddProduct = () => {
   };
 
   return (
-    <div className="p-4">
+    <div className="p-4 bg-[#F5F5DC]">
       <h2 className="text-2xl mb-4">Add a New Product</h2>
       <form onSubmit={handleSubmit}>
         <div className="space-y-4">
