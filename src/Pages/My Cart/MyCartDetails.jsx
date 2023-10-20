@@ -1,14 +1,11 @@
 /* eslint-disable react/prop-types */
 
-import { useState } from "react";
 import Swal from "sweetalert2";
 
 const MyCartDetails = ({ cart }) => {
   const { _id, image, name, price, shortdescription, rating } = cart;
 
-  const [carts,setCarts]=useState(cart)
-
-  const handleDelete = () => {
+  const handleDelete = (_id) => {
     Swal.fire({
       title: "Are you sure?",
       text: "You won't be able to revert this!",
@@ -16,22 +13,19 @@ const MyCartDetails = ({ cart }) => {
       showCancelButton: true,
       confirmButtonColor: "#3085d6",
       cancelButtonColor: "#d33",
-      confirmButtonText: "Yes, delete it!",
+      confirmButtonText: "Yes, delete it",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/cart/${_id}`,{
-            method:"DELETE"
+        fetch(`http://localhost:5000/cart/${_id}`, {
+          method: "DELETE",
         })
           .then((res) => res.json())
           .then((data) => {
             console.log(data);
             if (data.deletedCount > 0) {
-              
               Swal.fire("Deleted!", "Your file has been deleted.", "success");
+              
             }
-            const remaining = carts?.filter((item)=>item._id !== _id)
-            setCarts(remaining)
-            
           });
       }
     });
@@ -61,7 +55,7 @@ const MyCartDetails = ({ cart }) => {
         </div>
         <div className="p-6 pt-3">
           <button
-            onClick={handleDelete}
+            onClick={()=>handleDelete(_id)}
             className="block w-full select-none rounded-lg bg-red-500 py-3.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase text-white shadow-md shadow-red-500/20 transition-all hover:shadow-lg hover:shadow-red-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
             type="button"
             data-ripple-light="true"

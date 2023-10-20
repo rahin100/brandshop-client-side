@@ -63,7 +63,7 @@ const BrandDetailCard = ({ brand, products }) => {
       </div>
 
       {/* products */}
-      <div className="grid grid-cols-3 gap-5 mt-[40px] mb-[40px]">
+      <div className="grid lg:grid-cols-3 grid-cols-1 gap-5 mt-[40px] mb-[40px]">
         {products?.map((product) => (
           <div
             key={product.id}

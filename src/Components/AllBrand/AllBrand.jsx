@@ -7,9 +7,9 @@ const AllBrand = ({ singleData }) => {
   return (
     <Link to={`/brandDetails/${id}`}>
       <div>
-        <div className="card w-[500px] bg-base-100 shadow-xl">
+        <div className="card lg:w-[500px] bg-base-100 shadow-xl">
           <figure>
-            <img className="w-[500px] h-[350px]" src={brandImage} alt="Shoes" />
+            <img className="lg:w-[500px] h-[350px]" src={brandImage} alt="Shoes" />
           </figure>
           <div className="card-body">
             <h2 className="card-title text-5xl">{brandName}</h2>

@@ -6,7 +6,7 @@ const AllBrandData = () => {
   console.log(allData);
 
   return (
-    <div className="grid grid-cols-3 gap-7 mb-[100px]">
+    <div className="grid lg:grid-cols-3 grid-cols-1 gap-7 mb-[100px]">
       {allData?.map((singleData) => (
         <AllBrand key={singleData.id} singleData={singleData}></AllBrand>
       ))}

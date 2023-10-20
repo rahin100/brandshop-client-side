@@ -31,7 +31,7 @@ const Navbar = () => {
   };
 
   const navLink = (
-    <ul className="flex space-x-6">
+    <ul className="lg:flex lg:space-x-6">
       <li className="text-[18px] font-bold text-black">
         <NavLink
           to="/"
@@ -79,7 +79,7 @@ const Navbar = () => {
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
+                className="h-6 w-6"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -120,7 +120,7 @@ const Navbar = () => {
               </label>
               <ul
                 tabIndex={0}
-                className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-white rounded-box w-52"
+                className="mt-3 z-[1] p-2 shadow menu menu-lg dropdown-content bg-black rounded-box h-[]"
               >
                 <li>
                   <a>{user.displayName}</a>

@@ -48,7 +48,7 @@ const AddProduct = () => {
   };
 
   return (
-    <div className="bg-[#F4F3F0] p-24">
+    <div className="bg-[#F4F3F0] lg:p-24 mb-[30px]">
       <h2 className="text-3xl font-extrabold">Add a Product</h2>
       <form onSubmit={handleAddProduct}>
         {/* form name and quantity row */}
@@ -66,7 +66,7 @@ const AddProduct = () => {
               />
             </label>
           </div>
-          <div className="form-control md:w-1/2 ml-4">
+          <div className="form-control md:w-1/2 lg:ml-4">
             <label className="label">
               <span className="label-text">Name</span>
             </label>
@@ -95,7 +95,7 @@ const AddProduct = () => {
               />
             </label>
           </div>
-          <div className="form-control md:w-1/2 ml-4">
+          <div className="form-control md:w-1/2 lg:ml-4">
             <label className="label">
               <span className="label-text">Type</span>
             </label>
@@ -128,7 +128,7 @@ const AddProduct = () => {
               />
             </label>
           </div>
-          <div className="form-control md:w-1/2 ml-4">
+          <div className="form-control md:w-1/2 lg:ml-4">
             <label className="label">
               <span className="label-text">Short Description</span>
             </label>
