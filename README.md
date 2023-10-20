@@ -1,8 +1,15 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# PoshParade
 
-Currently, two official plugins are available:
+Discover the latest trends and timeless classics at our PoshParade fashion brand-shop. We offer a curated collection of apparel, accessories, and footwear that reflects style, quality, and individuality. Elevate your wardrobe with our handpicked selection, showcasing a fusion of contemporary and traditional fashion.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## The key features in this project is:
+
+ - Easily you can see our brand name
+ - Easily Add product
+ - Allow guests to create accounts to access personalized information.
+ - You can add product and remove product from my cart
+ - Also update the product. 
+
+
