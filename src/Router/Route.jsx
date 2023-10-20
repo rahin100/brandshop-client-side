@@ -72,7 +72,7 @@ const router = createBrowserRouter([
           path:"/updateBrand/:_id",
           element:<UpdateProduct></UpdateProduct>,
           loader: async ({ params }) => {
-            const res = await fetch(`http://localhost:5000/cart/${params._id}`);
+            const res = await fetch(`http://localhost:5000/brand/${params._id}`);
             const data = await res.json();
             return data;
           }

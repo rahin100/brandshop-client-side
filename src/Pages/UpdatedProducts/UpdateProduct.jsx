@@ -43,7 +43,7 @@ const UpdateProduct = () => {
     .then(res=>res.json())
     .then(data=>{
       console.log(data)
-      if(data.insertedId){
+      if(data. modifiedCount > 0){
         toast.success('Successfully data updated!')
       }
     })
@@ -54,7 +54,7 @@ const UpdateProduct = () => {
 
   return (
     <div>
-      <div className="bg-[#F4F3F0] p-24">
+      <div className="bg-[#F4F3F0] lg:p-24">
         <h2 className="text-3xl font-extrabold">Update Product</h2>
         <form onSubmit={handleUpdateProduct}>
           {/* form name and quantity row */}
@@ -73,7 +73,7 @@ const UpdateProduct = () => {
                 />
               </label>
             </div>
-            <div className="form-control md:w-1/2 ml-4">
+            <div className="form-control md:w-1/2 lg:ml-4">
               <label className="label">
                 <span className="label-text">Name</span>
               </label>
@@ -104,7 +104,7 @@ const UpdateProduct = () => {
                 />
               </label>
             </div>
-            <div className="form-control md:w-1/2 ml-4">
+            <div className="form-control md:w-1/2 lg:ml-4">
               <label className="label">
                 <span className="label-text">Type</span>
               </label>
@@ -135,7 +135,7 @@ const UpdateProduct = () => {
                 />
               </label>
             </div>
-            <div className="form-control md:w-1/2 ml-4">
+            <div className="form-control md:w-1/2 lg:ml-4">
               <label className="label">
                 <span className="label-text">Short Description</span>
               </label>
