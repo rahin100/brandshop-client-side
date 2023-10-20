@@ -9,6 +9,7 @@ import SignUp from "../Pages/SignUp/SignUp";
 import Login from "../Pages/Login/Login";
 import ProductDetails from "../Pages/Product Details/ProductDetails";
 import MyCart from "../Pages/My Cart/MyCart";
+import UpdateProduct from "../Pages/UpdatedProducts/UpdateProduct";
 
 const router = createBrowserRouter([
   {
@@ -66,7 +67,18 @@ const router = createBrowserRouter([
             const data = await res.json()
             return data;
           }
+        },
+        {
+          path:"/updateBrand/:_id",
+          element:<UpdateProduct></UpdateProduct>,
+          loader: async ({ params }) => {
+            const res = await fetch(`http://localhost:5000/cart/${params._id}`);
+            const data = await res.json();
+            return data;
+          }
+          
         }
+
     ]
   }
 
