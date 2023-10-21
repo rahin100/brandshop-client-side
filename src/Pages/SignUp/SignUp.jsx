@@ -9,7 +9,6 @@ const SignUp = () => {
 
   const handleSignUp = (e) => {
     e.preventDefault();
-   
     const form = e.target;
     const name = form.name.value;
     const photo = form.photo.value;
@@ -30,6 +29,7 @@ const SignUp = () => {
             console.log(result.user);
             this.form.reset()
             navigate('/')
+            
           })
           .catch((error) => {
             console.log(error);

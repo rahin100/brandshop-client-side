@@ -11,7 +11,7 @@
   
   {
     "id":"2",
-    "brandName": " Adidas",
+    "brandName": "Adidas",
     "brandImage": "https://i.ibb.co/ccDt8ZS/chuttersnap-XNq-Llj-W6-XU8-unsplash.jpg",
     "slider1": "https://i.ibb.co/TcR0W3X/grailify-EUo-Tj2y-I5-LU-unsplash.jpg",
     "slider2": "https://i.ibb.co/Bzvz76Q/sara-kurfess-Vfvnjb-KFu4-unsplash.jpg",
@@ -29,8 +29,8 @@
   },
   {
     "id":"4",
-    "brandName": "CHANEL",
-    "brandImage": "https://i.ibb.co/sRCyhd6/5f7c2ea294fce90018f7b412.jpg",
+    "brandName": "Chanel",
+    "brandImage":"https://i.ibb.co/sRCyhd6/5f7c2ea294fce90018f7b412.jpg",
     "slider1": "https://i.ibb.co/sCkD4Tn/tu-ikuan-w-o-Lz-Cj-Xp7-U-unsplash.jpg",
     "slider2": "https://i.ibb.co/chBfjGH/pexels-antony-trivet-9981738.jpg",
     "slider3": "https://i.ibb.co/gvmPQfh/Screen-Shot-2023-03-31-at-5-10-22-pm-1024x765.png"

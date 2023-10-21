@@ -18,7 +18,7 @@ const Follow = () => {
             />
           </div>
         </div>
-        <div className="absolute bottom-[35%]">
+        <div className="absolute lg:bottom-[35%] bottom-[42%] ">
           <h2 className="lg:text-6xl text-3xl text-white text-center font-extrabold">
             Fashion fades, but style is eternal.
           </h2>
