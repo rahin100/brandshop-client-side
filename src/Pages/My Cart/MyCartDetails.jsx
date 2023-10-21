@@ -4,7 +4,6 @@ import Swal from "sweetalert2";
 
 const MyCartDetails = ({ cartItem, deleteCart }) => {
   const { _id, image, name, price, shortdescription, rating } = cartItem;
-
   const handleDelete = (_id) => {
     Swal.fire({
       title: "Are you sure?",

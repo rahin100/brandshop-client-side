@@ -1,11 +1,14 @@
 /* eslint-disable no-unused-vars */
 
+import { useContext } from "react";
 import toast from "react-hot-toast";
 
 
 /* eslint-disable react/prop-types */
 const ProductDetailsCard = ({ brand }) => {
+
   const handleAddToCart = () => {
+
     const {
       _id,
       image,

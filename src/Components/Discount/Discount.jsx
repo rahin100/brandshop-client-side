@@ -4,7 +4,7 @@ const Discount = () => {
   return (
     <div className="relative mb-[60px]">
       <div className="background-image">
-      <div className="w-full lg:h-[66vh] h-[140vh] absolute inset-0 bg-black opacity-50 "></div>
+      <div className="w-full lg:h-[66vh] h-[102vh] absolute inset-0 bg-black opacity-50 "></div>
         <div className="absolute left-[50%] transform -translate-x-1/2">
           <h1 className="lg:text-7xl text-4xl text-white text-center pt-[80px]">
             SUBSCRIBE FOR A 20% DISCOUNT

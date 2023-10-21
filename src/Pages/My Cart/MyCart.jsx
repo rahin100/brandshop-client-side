@@ -3,14 +3,19 @@ import MyCartDetails from "./MyCartDetails";
 import { useState } from "react";
 
 const MyCart = () => {
+
     const cartData = useLoaderData()
+    console.log(cartData)
     const [loadCart, setLoadCart]=useState(cartData)
+
+    
 
     const deleteCart = (deletedItemId) =>{
         const updateCart = loadCart?.filter((item)=> item._id !== deletedItemId)
         setLoadCart(updateCart)
         console.log(updateCart)
     }
+
 
     console.log(loadCart)
 
