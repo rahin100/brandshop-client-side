@@ -8,6 +8,7 @@ const ProductDetailsCard = ({ brand }) => {
 
     const handleAddToCart =() =>{
         const {_id, image, name, brandname, type, price, shortdescription, rating } =brand;
+        
 
         fetch('http://localhost:5000/cart',{
             method:"POST",
@@ -41,7 +42,7 @@ const ProductDetailsCard = ({ brand }) => {
             <p className="py-6">{shortdescription}</p>
             <p className="text-2xl mb-[20px]">Price:${price}</p>
 
-            <button onClick={handleAddToCart} className="btn btn-primary">Add To Cart</button>
+            <button onClick={() => handleAddToCart()} className="btn btn-primary">Add To Cart</button>
           </div>
         </div>
       </div>

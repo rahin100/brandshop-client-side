@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 const BrandDetailCard = ({ brand, products }) => {
   const { slider1, slider2, slider3 } = brand;
 
+
   return (
     <div>
       <div className="carousel w-full h-[90vh]">
@@ -69,8 +70,8 @@ const BrandDetailCard = ({ brand, products }) => {
             key={product.id}
             className="relative flex flex-col text-gray-700 bg-white shadow-md rounded-xl bg-clip-border"
           >
-            <div className="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white h-[600px]  rounded-xl bg-clip-border">
-              <img src={product.image} alt={product.name} />
+            <div className="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white h-[450px]  rounded-xl bg-clip-border">
+              <img  className="w-full h-full" src={product.image} alt={product.name} />
             </div>
 
             <div className="p-6">

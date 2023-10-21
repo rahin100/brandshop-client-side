@@ -4,7 +4,7 @@ import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Home from "../Pages/Home/Home";
 import AddProduct from "../Pages/AddProduct/AddProduct";
 import BrandDetails from "../Pages/BrandDetails/BrandDetails";
-
+import PrivateRoute from "./PrivateRoute";
 import SignUp from "../Pages/SignUp/SignUp";
 import Login from "../Pages/Login/Login";
 import ProductDetails from "../Pages/Product Details/ProductDetails";
@@ -29,7 +29,9 @@ const router = createBrowserRouter([
         },
         {
           path:'/addProduct',
-          element:<AddProduct></AddProduct>
+          element:<PrivateRoute>
+            <AddProduct></AddProduct>
+          </PrivateRoute>
 
         },
         {
@@ -39,7 +41,7 @@ const router = createBrowserRouter([
             const res = await fetch("/brand.json")
             const data = await res.json()
             return data;
-          }
+          },
         },
         {
           path:"/login",
@@ -51,7 +53,9 @@ const router = createBrowserRouter([
         },
         {
           path:'/details/:_id',
-          element:<ProductDetails></ProductDetails>,
+          element:<PrivateRoute>
+            <ProductDetails></ProductDetails>,
+          </PrivateRoute>,
           loader: async () =>{
             const res = await fetch("http://localhost:5000/brand")
             const data = await res.json()
@@ -61,7 +65,9 @@ const router = createBrowserRouter([
         },
         {
           path:"/mycart",
-          element: <MyCart></MyCart>,
+          element: <PrivateRoute>
+            <MyCart></MyCart>
+          </PrivateRoute>,
           loader:async () =>{
             const res = await fetch("http://localhost:5000/cart")
             const data = await res.json()
@@ -70,7 +76,9 @@ const router = createBrowserRouter([
         },
         {
           path:"/updateBrand/:_id",
-          element:<UpdateProduct></UpdateProduct>,
+          element:<PrivateRoute>
+            <UpdateProduct></UpdateProduct>
+          </PrivateRoute>,
           loader: async ({ params }) => {
             const res = await fetch(`http://localhost:5000/brand/${params._id}`);
             const data = await res.json();

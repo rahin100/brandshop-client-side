@@ -1,13 +1,15 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { useContext } from "react";
 
 const Login = () => {
   const { signIn, googleLogin } = useContext(AuthContext);
 
+  const location = useLocation();
+  const navigate = useNavigate();
+
   const handleLogin = (e) => {
     e.preventDefault();
-    e.target.reset();
     const form = e.target;
     const email = form.email.value;
     const password = form.password.value;
@@ -16,6 +18,8 @@ const Login = () => {
     signIn(email, password)
       .then((result) => {
         console.log(result.user);
+        navigate(location?.state ? location.state : '/')
+        this.form.reset()
       })
       .catch((err) => {
         console.log(err.message);

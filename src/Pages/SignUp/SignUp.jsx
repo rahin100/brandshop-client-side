@@ -1,14 +1,15 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import toast from "react-hot-toast";
 
 const SignUp = () => {
   const { createUser, googleLogin } = useContext(AuthContext);
+  const navigate = useNavigate()
 
   const handleSignUp = (e) => {
     e.preventDefault();
-    e.target.reset()
+   
     const form = e.target;
     const name = form.name.value;
     const photo = form.photo.value;
@@ -27,6 +28,8 @@ const SignUp = () => {
         createUser(email, password)
           .then((result) => {
             console.log(result.user);
+            this.form.reset()
+            navigate('/')
           })
           .catch((error) => {
             console.log(error);
@@ -47,7 +50,7 @@ const SignUp = () => {
 
   return (
     <div>
-      <div className="min-h-screen bg-base-200 mb-[50px]">
+      <div className="lg:hero min-h-screen bg-base-200 mb-[50px]">
         <div className="flex-col ">
           <div className="text-center lg:text-left">
             <h1 className="text-5xl font-bold mt-[20px] mb-[20px]">Sign Up</h1>

@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 const BrandDetail = () => {
   const [brand, setBrand] = useState({});
   const [products, setProducts] = useState([]);
+  
 
   const allData = useLoaderData();
   console.log(allData);
@@ -18,8 +19,9 @@ const BrandDetail = () => {
     console.log(findBrand);
   }, [id, allData]);
 
+ 
   useEffect(() => {
-    fetch(`http://localhost:5000/brand`)
+    fetch("http://localhost:5000/brand") 
       .then((response) => response.json())
       .then((data) => {
         setProducts(data);
@@ -28,7 +30,8 @@ const BrandDetail = () => {
       .catch((error) => {
         console.error("Error fetching products: ", error);
       });
-  }, [brand.brandName]); // Only fetch when brandName changes
+  }, [brand.brandName]); 
+
 
   return (
     <div>

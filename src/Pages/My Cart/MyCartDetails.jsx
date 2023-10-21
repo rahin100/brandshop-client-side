@@ -2,8 +2,11 @@
 
 import Swal from "sweetalert2";
 
-const MyCartDetails = ({ cart }) => {
-  const { _id, image, name, price, shortdescription, rating } = cart;
+const MyCartDetails = ({ cartItem, deleteCart }) => {
+  const { _id, image, name, price, shortdescription, rating } = cartItem;
+
+
+
 
   const handleDelete = (_id) => {
     Swal.fire({
@@ -24,7 +27,7 @@ const MyCartDetails = ({ cart }) => {
             console.log(data);
             if (data.deletedCount > 0) {
               Swal.fire("Deleted!", "Your file has been deleted.", "success");
-              
+              deleteCart(_id)
             }
           });
       }
@@ -33,9 +36,9 @@ const MyCartDetails = ({ cart }) => {
 
   return (
     <div>
-      <div className="relative flex w-full  flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
-        <div className="relative mx-4 mt-4 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
-          <img src={image} alt={name} />
+      <div className="relative flex flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
+        <div className="relative h-[480px] mx-4 mt-4 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
+          <img className="w-full h-full " src={image} alt={name} />
         </div>
         <div className="p-6">
           <div className="flex items-center justify-between mb-3">
