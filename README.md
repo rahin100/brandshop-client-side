@@ -12,4 +12,6 @@ Discover the latest trends and timeless classics at our PoshParade fashion brand
  - You can add product and remove product from my cart
  - Also update the product. 
 
+## 🔗 Links
+https://react-brandshop-project.web.app/
 
